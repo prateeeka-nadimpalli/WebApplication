@@ -1,0 +1,91 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>clubs</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+ <style>
+  .carousel-inner img {
+      width: 70%;
+      height: 70%;
+  }
+
+ 
+.div2{
+    width: 36%;
+    height: 26%;
+    border-radius: 5px;
+    border: 7px solid pink;    
+    padding: 45px;
+    position: absolute;
+    left: 251px;
+    top: 69px;
+    }
+input {
+margin : 2px;
+border-color:lightgreen;
+}
+</style>
+</head>
+<body>
+
+
+<div class="div1">
+<div class="div2">
+<form action="LoginServlet" method="POST">
+<table><tr>
+<td>Enter email id :</td><td><input type="text" name="uid"></td></tr>
+<tr><td>Enter password :</td><td><input type="password" name="pwd"></td></tr>
+<tr><td colspan=2 align=center><input type="submit" value="LOGIN"></td></tr>
+</table>
+</form>
+</div> 
+</div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Admin login</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- LINEARICONS -->
+		<link rel="stylesheet" href="fonts3/linearicons/style.css">
+		
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="css3/style.css">
+	</head>
+
+	<body>
+
+		<div class="wrapper">
+			<div class="inner">
+				<img src="images3/image-1.png" alt="" class="image-1">
+				<form action="LoginServlet" method="POST">
+					<h3>Admin Login</h3>
+					<div class="form-holder">
+						<span class="lnr lnr-envelope"></span>
+						<input type="email" class="form-control" name="uid" placeholder="Mail">
+					</div>
+					<div class="form-holder">
+						<span class="lnr lnr-lock"></span>
+						<input type="password" class="form-control" name="pwd" placeholder="Password">
+					</div>
+						<button type="submit" >
+						Login
+					</button>
+				</form>
+				<img src="images3/image-2.png" alt="" class="image-2">
+			</div>
+			
+		</div>
+		
+		<script src="js3/jquery-3.3.1.min.js"></script>
+		<script src="js3/main.js"></script>
+	</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>

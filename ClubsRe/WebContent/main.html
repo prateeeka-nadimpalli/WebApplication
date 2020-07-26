@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+<style>
+/* Make the image fully responsive */
+body {
+	background: #e0ebeb;
+}
+
+.button {
+	display: inline-block;
+	border-radius: 4px;
+	background-color: green;
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 25px;
+	width: 100px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 2px;
+}
+
+.button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.button span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
+.button:hover span {
+	padding-right: 25px;
+}
+
+.button:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+.left {
+	width: 60%;
+	float: left;
+	padding-right: 5%;
+}
+
+.right {
+	width: 40%;
+	float: right;
+	padding-top: 5%;
+	padding-left: 5%;
+}
+
+.carousel-inner img {
+	padding-left: 15%;
+	width: 100%;
+	padding-right: 15%;
+	padding-top: 9%;
+}
+
+.loginpopup {
+	padding-top: 10%;
+}
+
+.div1 {
+	padding-left: 800px;
+}
+
+.xxx {
+	padding-left: 40%;
+	width: 60%;
+}
+
+.div2 {
+	padding-left: 35px;
+}
+
+.div3 {
+	padding-left: 60px;
+}
+
+.navbg {
+	background-color: #4da6ff;
+}
+</style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+	<nav class="navbar navbar-expand-lg bg-primary fixed top">
+		<a class="navbar-brand" href="#"> <img src=""
+			class="rounded" width="10%">
+		</a>
+		<ul class="navbar-nav">
+			<li class="nav-item "><a class="nav-link " href="Register.jsp"><font
+					size="5" color="white"><b><i class="fa fa-envelope"></i>
+							Register</b></font></a></li>
+
+			<!-- Trigger the modal with a button -->
+			<div2>
+			<li><button type="button" class="btn btn-primary btn-lg"
+					data-toggle="modal" data-target="#"><font color = "white"><b><i class="fa fa-group"></i>
+					Login</b></font>
+				</button></li>
+			</div2>
+		</ul>
+	</nav>
+	<!-- Modal -->
+	<div class="container">
+		<div class="modal fade loginpopup xxx" id="myModal" role="dialog">
+			<div class="modal-dialog">
+
+				<div class="modal-content">
+					<div class="card">
+						<article class="card-body">
+							<button type="button" class="close" data-dismiss="modal"
+								aria-hidden="true">×</button>
+							<h4 class="card-title text-center mb-4 mt-1">Login</h4>
+							<hr>
+							<div class="card-body">
+								<form action="#" method="post">
+									<div class="input-group form-group">
+										<div class="input-group-prepend">
+											<span class="input-group-text"><i class="fas fa-user"></i></span>
+										</div>
+										<input type="text" class="form-control" placeholder="clubname"
+											name="name">
+									</div>
+									<div class="input-group form-group">
+										<div class="input-group-prepend">
+											<span class="input-group-text"><i class="fas fa-key"></i></span>
+										</div>
+										<input type="password" class="form-control"
+											placeholder="password" name="pwd">
+									</div>
+									<div class="form-group">
+										<select class="form-control" id="sel1" name="role">
+											<<!--  <option>student login</option>-->
+											<option>coordinator login</option>
+											<option>admin login</option>
+										</select>
+									</div>
+									<div class="form-group div3">
+										<button class="button" role="button">
+											<span>Login</span>
+										</button>
+									</div>
+								</form>
+							</div>
+						</article>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+</body>
+</html>
